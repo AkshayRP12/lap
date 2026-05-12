@@ -37,14 +37,14 @@ pipeline {
             emailext ( 
                 subject: "SUCCESS: ${JOB_NAME} #${BUILD_NUMBER}", 
                 body: "Build succeeded!\nCheck: ${BUILD_URL}", 
-                to: "ankithshetty0505@gmail.com" 
+                to: "akshayrp3459@gmail.com" 
             ) 
         } 
         failure { 
             emailext ( 
                 subject: "FAILED: ${JOB_NAME} #${BUILD_NUMBER}", 
                 body: "Build failed!\nCheck: ${BUILD_URL}", 
-                to: "ankithshetty0505@gmail.com" 
+                to: "akshayrp3459@gmail.com" 
             ) 
         } 
     }    
